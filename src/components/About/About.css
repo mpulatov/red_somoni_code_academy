@@ -1,0 +1,8 @@
+#home {
+    position: relative;
+    background: url("../../assets/main.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    object-fit: contain;
+}
