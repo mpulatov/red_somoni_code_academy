@@ -1,5 +1,4 @@
 import React from "react";
-import golang from "../../assets/Agolang.png";
 import { coursesData } from "../../demo/demoData";
 
 function Courses() {
@@ -31,7 +30,7 @@ function Courses() {
                   <p className="text-2xl text-main-color">{course.fee}</p>
                 </div>
               ))
-            : "Курси нет"}
+            : ""}
         </div>
       </div>
     </div>

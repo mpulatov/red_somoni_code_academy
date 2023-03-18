@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Navbar1() {
   const [openNav, setOpenNav] = useState(false);
@@ -53,12 +54,15 @@ export default function Navbar1() {
           {/*<span>Material Tailwind</span>*/}
         </Typography>
         <div className="hidden lg:block">{navList}</div>
-        <Button
-          size="sm"
-          className="hidden lg:inline-block h-[45px] w-[190px] bg-main-bg"
-        >
-          <span>Подать заявку</span>
-        </Button>
+
+        <Link to="/contact">
+          <Button
+            size="sm"
+            className="hidden lg:inline-block h-[45px] w-[190px] bg-main-bg"
+          >
+            <span>Подать заявку</span>
+          </Button>
+        </Link>
         <IconButton
           variant="text"
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
